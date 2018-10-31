@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:CIS 22A.xcodeproj">
+      location = "self:/Users/noahcardoza/projects/cpp/xcode/CIS 22A/CIS 22A.xcodeproj">
    </FileRef>
 </Workspace>

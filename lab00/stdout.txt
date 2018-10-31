@@ -1,0 +1,26 @@
+NAME:
+	Noah Cardoza
+
+E-MAIL:
+	noahcardoza@gmail.com
+
+MAJOR:
+	Computer Science
+
+COMPUTER EXPERIENCE:
+	| I have always spent a lot of time tinkering on my computer(s).
+	| I REALLY started programming about 3 years ago in Python 2 and now I
+	| am relatively fluent in Python 2/3, JavaScript (both client and server side).
+	| I Know a good amount of HTML/CSS but prefer not to bother with it.
+	| In 2016 I passed a 42 C and Ruby piscine (https://www.42.us.org/).
+	| I wrote my first and only C++ program a few weeks before this class
+	| (https://github.com/NoahCardoza/cpp-tic-tac-toe).
+	| I push most of my project to Github (https://github.com/NoahCardoza).
+	|  
+	| A few closing statements:
+	| -> C++ == C
+	| -> ++C > C
+	| -> CLI >= GUI
+	| -> Zsh >= Bash
+
+Programmed by: Noah Cardoza
