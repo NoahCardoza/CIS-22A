@@ -13,6 +13,7 @@
 using namespace std;
 
 void panic(string errorMessage);
+double askForDouble(string prompt);
 double askForDoubleGtZero(string prompt);
 double askForDoubleGtOne(string prompt);
 bool askForBool(string prompt);
@@ -49,15 +50,20 @@ void panic(string errorMessage) {
   exit(1);
 }
 
+double askForDouble(string prompt) {
+  double in;
+  cout << prompt;
+  cin >> in;
+  return in;
+}
+
 double askForDoubleGtZero(string prompt){
   /*
    Pre    : prompt - a prompt to diplay to the user
    Post   : returns user input as a double
    Purpose: to validate user input only allowind doubles > 0
    */
-  double in;
-  cout << prompt;
-  cin >> in;
+  double in = askForDouble(prompt);
   if (in <= 0) panic("This value must be greater than 0");
   return in;
 }
@@ -68,9 +74,7 @@ double askForDoubleGtOne(string prompt){
    Post   : returns user input as a double
    Purpose: to validate user input only allowind doubles > 1
    */
-  double in;
-  cout << prompt;
-  cin >> in;
+  double in = askForDouble(prompt);
   if (in <= 1) panic("This value must be greater than 1");
   return in;
 }
@@ -81,14 +85,14 @@ bool askForBool(string prompt){
    Post   : returns true or flase based on user input
    Purpose: to validate user input and accept 'Y' as true and 'N' as false
    */
-  char in;
-  cout << prompt;
-  cin >> in;
-  in = toupper(in);
-  if (!(in == 'Y' or in == 'N'))
-    panic("This value must 'Y' or 'N'");
+//  char in = askForCharInRange(prompt, "YN");
+//  cout << prompt;
+//  cin >> in;
+//  in = toupper(in);
+//  if (!(in == 'Y' or in == 'N'))
+//    panic("This value must 'Y' or 'N'");
   
-  return (in == 'Y');
+  return (askForCharInRange(prompt, "YN") == 'Y');
 }
 
 char askForCharInRange(string prompt, string range) {
