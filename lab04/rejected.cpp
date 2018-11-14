@@ -20,7 +20,7 @@ struct vehicle_t {
   double perMinute;
   double perMile;
   double minimumFare;
-} ;
+};
 
 vehicle_t newVehicle(double baseFair, double perMinute, double perMile, double minimumFare);
 void panic(string errorMessage);
@@ -177,7 +177,6 @@ double calculateFair(double time, double distance, char typeOfVehicle, double su
   map<char, vehicle_t> feeSchedule;
   vehicle_t v;
   double total;
-  
   feeSchedule['X'] = newVehicle(2, .22, 1.15, 6.55);
   feeSchedule['S'] = newVehicle(15, .9, 3.75, 25);
   feeSchedule['L'] = newVehicle(5, .5, 2.75, 10.55);
