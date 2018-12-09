@@ -1,0 +1,5 @@
+"Call a calculation function from main which handles all calculations. This function needs to contain a sub-function to calculate the down payment, amount of the loan and monthly mortgage payment."
+
+Does this mean one function for each calculation or, inside the calculation function there should be a subfunction to handle all the calculations?
+
+"

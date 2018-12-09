@@ -1,0 +1,9 @@
+int getData(string  CRNs[MAX_CLASS_NUMBER],
+            string  classes[MAX_CLASS_NUMBER],
+            int     enrollment[MAX_CLASS_NUMBER],
+            int     maxEnrollment[MAX_CLASS_NUMBER],
+            int     waitList[MAX_CLASS_NUMBER],
+            double  fillRate[MAX_CLASS_NUMBER]) {
+
+  return 100;
+}

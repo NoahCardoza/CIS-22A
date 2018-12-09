@@ -1,36 +1,25 @@
-//
-//  main.cpp
-//  testing-grounds
-//
-//  Created by Darwin on 10/12/18.
-//  Copyright © 2018 Noah Cardoza. All rights reserved.
-//
-
 #include <iostream>
-#include <fstream>
+#include <iomanip>
 
 using namespace std;
 
-int main() {
-  int elements;
-  double total = 0, temp;
-  cin >> elements;
-  ifstream file;
-  file.open("numbers");
-  for(;elements > 0;elements--){
-    file >> temp;
-    total += temp;
-  }
-  file.close();
-  
 
-//  int z; int x = 2;
-//
-//  z = ++x * 10;
-//
-//  cout << x << " and " ;
-//
-//  cout << z << endl;
-//
-//  return 0;
+int countPassing(double arr[], int num);
+
+
+//Write the the function definition including the function header for  countPassing() so that the number of values greater than or equal to 69.5 in arr[] is returned
+
+int main()
+{
+  double happy[5] = { 69.7, 6967, 69.9, 80, 90};
+  cout << countPassing(happy, 5) << endl;
+  return 0;
 }
+
+
+int countPassing(double arr[], int num){
+  int count = 0;
+  while (--num >= 0) count += arr[num] >= 69.5;
+  return count;
+}
+
